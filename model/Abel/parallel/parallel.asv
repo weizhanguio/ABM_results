@@ -1,0 +1,44 @@
+% model for N=2M
+
+clc;
+clear all
+C1=32000;   %32000/16=2000  stream2
+C2=256000;   %256000/16=16000  stream2
+C3=20*10^6;   %20M/16  =1.25M    stream2
+N1=C1/24;
+N2=C2/24;
+N3=C3/24;
+BL1=44*10^9;   
+BL2=36.8*10^9;    
+BL3=27.3*10^9;    
+BM=16.0*10^9;
+
+N=2000000; 
+
+zhongpin=2.6*10^9;
+ n=2
+ N1_all=N1*n;
+ N2_all=N2*n;
+ N3_all=N3*2;
+ 
+ F=4*zhongpin*n;
+ BL1_all=BL1*n;
+ BL2_all=BL2*n;
+ BL3_all=BL3*n;
+ BM_all=26*10^9;      
+ %BM(two-socket): 86.4(16 threads), 80(8 threads) 
+                   % 48.8(4 threads) 1(2 threads)
+
+
+%openmp                   
+openmp=N1_all*(N1_all+1)*max(2/n/F,10/BL1_all) ...,
+    +(   (N2_all-N1_all)*(N2_all+N1_all+1)* max(2/n/F,max(10/BL1_all,6/BL2_all))  ) ...,
+    +(  (N3_all-N2_all)*(N3_all+N2_all+1)*max(2/n/F,max(10/BL1_all,6/BL3_all)) ) ...,
+    +((N-N3_all)*(N+N3_all+1)*max(2/n/F,max(10/BL1_all,6/BM_all)) )
+
+   tbfb=N1_all*(N1_all+1)*max(2/n/F,10/BL1_all)+  max( (N2_all-N1_all)*(N2_all+N1_all+1)* max(2/n/F,10/BL1_all),12*N1_all*(N2_all-N1_all)/BL1_all+6*(1+N2_all-N1_all)*(N2_all-N1_all)/BL2_all) ...,
+       +max(  (N3_all-N2_all)*(N3_all+N2_all+1)*max(2/n/F,10/BL1_all),12*N2_all*(N3_all-N2_all)/BL2_all+6*(1+N3_all-N2_all)*(N3_all-N2_all)/BL3_all) ...,
+       +max((N-N3_all)*(N+N3_all+1)*max(2/n/F,10/BL1_all),12*N3_all*(N-N3_all)/BL3_all+6*(1+N-N3_all)*(N-N3_all)/BM_all )
+ 
+
+   
