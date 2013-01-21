@@ -1,0 +1,16 @@
+Starting job 952546 ("ForwardBack") on c5-14 at 2013年 01月 16日 星期三 22:46:14 CET
+Serial Forward-Back version---------------
+T=200000, h=0.1, N=2000000
+y[2000000]=1.261584e-03      timeusage=2147.69      GFLOPs=3.72493
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+952546.batch    265176K     48952K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+952546       ForwardBa+         16                         00:35:54      0:0 
+
+Job 952546 ("ForwardBack") completed on c5-14 at 2013年 01月 16日 星期三 23:22:07 CET

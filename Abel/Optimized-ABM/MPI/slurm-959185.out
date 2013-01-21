@@ -1,0 +1,17 @@
+Starting job 959185 ("mpi") on c9-29 at 2013年 01月 17日 星期四 12:27:32 CET
+MPI Temporal-Blocking and ForwardBack combination version-----
+Num MPI procs=16
+T=100000, h=0.1, N=1000000
+Num MPI procs=16	y[1000000]=1.784120e-03	timeusage=32.4	GFLOPs=61.7285
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+959185.batch   3602640K    500280K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+959185              mpi         16                         00:03:04      0:0 
+
+Job 959185 ("mpi") completed on c9-29 at 2013年 01月 17日 星期四 12:30:36 CET

@@ -1,0 +1,19 @@
+OpenMP Temporal-Blocking version---------------
+T=200000, h=0.1, N=2000000
+Application 1950395 exit signals: Terminated
+Application 1950395 resources: utime ~115412s, stime ~0s
+--------------------------------------------------
+Begin PBS Epilogue hexagon.bccs.uib.no
+Date:             Wed Jan  9 16:53:24 CET 2013
+Job ID:           891391.ufs
+Username:         weizhang
+Group:            weizhang
+Job Name:         threads32
+Session:          25514
+Limits:           walltime=02:00:00
+Resources:        walltime=02:00:14
+Queue:            normal
+Account:          nn2849k
+Base login-node:  login3
+End PBS Epilogue  Wed Jan  9 16:53:24 CET 2013
+--------------------------------------------------

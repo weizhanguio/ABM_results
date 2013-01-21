@@ -1,0 +1,20 @@
+Serial Temporal-Blocking version---------------
+T=2000, h=0.1, N=20000
+PAPI Event name: PAPI_L1_TCA, value: 803849051
+y[20000]=1.261258e-02	timeusage=0.25	GFLOPs=3.20016
+Application 1953739 resources: utime ~0s, stime ~0s
+--------------------------------------------------
+Begin PBS Epilogue hexagon.bccs.uib.no
+Date:             Mon Jan 14 21:20:44 CET 2013
+Job ID:           893066.ufs
+Username:         weizhang
+Group:            weizhang
+Job Name:         serial.pbs
+Session:          32043
+Limits:           walltime=01:00:00
+Resources:        walltime=00:00:01
+Queue:            small
+Account:          nn2849k
+Base login-node:  login4
+End PBS Epilogue  Mon Jan 14 21:20:44 CET 2013
+--------------------------------------------------

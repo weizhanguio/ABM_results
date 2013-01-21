@@ -1,0 +1,22 @@
+#!/bin/bash
+#Job name:
+#SBATCH --job-name=ForwardBack
+#
+#Project:
+#SBATCH --account=nn2849k
+#
+#Wall clock limit:
+#SBATCH --time=10:00:00
+#
+#Max memory usage:
+#SBATCH --mem-per-cpu=1G
+#SBATCH --nodes=1
+#SBATCH --exclusive
+#SBATCH --cpus-per-task=16
+
+##Set up job environment
+source /cluster/bin/jobsetup
+##Do some work:
+##cd $SCRATCH
+numactl --physcpubind=0  ./app 0.1 200000
+

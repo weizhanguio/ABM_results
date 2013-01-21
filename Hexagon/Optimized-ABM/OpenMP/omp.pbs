@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+# Give the job a name (optional)
+#
+#
+# Specify the project the job should be accounted on (obligatory)
+#PBS -A nn2849k
+#
+# 
+#
+# Write the standard output of the job to file 'seqjob.out' (optional)
+#
+#
+# Write the standard error of the job to file 'seqjob.err' (optional)
+#
+#
+# Make sure I am in the correct directory
+# The job needs at most 60 hours wall-clock time on 1 CPU (obligatory)
+#PBS -l walltime=10:00:00
+#PBS -l mppwidth=1
+#PBS -l mppdepth=2
+#PBS -N "32thread"   
+#mppdepth is the number of OpenMP threads per node
+cd /work/weizhang/ABM/Optimized-ABM/OpenMP
+export OMP_NUM_THREADS=32
+# Invoke the executable on the compute node
+#aprun -B -cc 0,30 ./app 0.1 200000
+#aprun -B -cc 0,4  ./app 0.1 20000
+#aprun -B -cc 0,2,4,6,8,10,12,14  ./app 0.1 2000 
+#aprun -B -cc 0,4,8,12,16,20,24,28  ./app 0.1 200000
+#aprun -B -cc 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15  ./app 0.1 200000
+#aprun -B -cc 0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30  ./app 0.1 200000
+aprun -B -cc 0-31 ./app 0.1 200000
+
+

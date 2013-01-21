@@ -1,0 +1,15 @@
+--------------------------------------------------
+Begin PBS Epilogue hexagon.bccs.uib.no
+Date:             Wed Jan  9 18:04:25 CET 2013
+Job ID:           891662.ufs
+Username:         weizhang
+Group:            weizhang
+Job Name:         2thread
+Session:          14441
+Limits:           walltime=10:00:00
+Resources:        walltime=00:00:00
+Queue:            normal
+Account:          nn2849k
+Base login-node:  login1
+End PBS Epilogue  Wed Jan  9 18:04:25 CET 2013
+--------------------------------------------------

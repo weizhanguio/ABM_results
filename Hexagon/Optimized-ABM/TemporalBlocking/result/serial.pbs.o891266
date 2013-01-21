@@ -1,0 +1,19 @@
+Serial Temporal-Blocking version---------------
+T=20000, h=0.1, N=200000
+y[200000]=3.989327e-03	timeusage=25.55	GFLOPs=3.13113
+Application 1950156 resources: utime ~26s, stime ~0s
+--------------------------------------------------
+Begin PBS Epilogue hexagon.bccs.uib.no
+Date:             Wed Jan  9 11:41:23 CET 2013
+Job ID:           891266.ufs
+Username:         weizhang
+Group:            weizhang
+Job Name:         serial.pbs
+Session:          7893
+Limits:           walltime=01:00:00
+Resources:        walltime=00:00:26
+Queue:            small
+Account:          nn2849k
+Base login-node:  login1
+End PBS Epilogue  Wed Jan  9 11:41:23 CET 2013
+--------------------------------------------------

@@ -1,0 +1,16 @@
+Starting job 952558 ("fwtb") on c8-9 at 2013年 01月 16日 星期三 22:46:45 CET
+h=0.100000T=40000.000000Serial Temporal-Blocking and ForwardBack combination version-----
+T=40000, h=0.1, N=400000
+y[400000]=2.820915e-03	timeusage=49.78	GFLOPs=6.4283
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+952558.batch    265172K     10772K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+952558             fwtb         16                         00:00:51      0:0 
+
+Job 952558 ("fwtb") completed on c8-9 at 2013年 01月 16日 星期三 22:47:35 CET

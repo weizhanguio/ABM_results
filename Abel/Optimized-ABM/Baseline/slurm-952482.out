@@ -1,0 +1,16 @@
+Starting job 952482 ("baseline") on c6-23 at 2013年 01月 16日 星期三 22:40:37 CET
+Serial Baseline version---------------
+T=200000, h=0.1, N=2000000
+y[2000000]=1.261584e-03    timeusage=3499.65    GFLOPs=2.28594
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+952482.batch    265176K     48956K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+952482         baseline         16                         00:58:29      0:0 
+
+Job 952482 ("baseline") completed on c6-23 at 2013年 01月 16日 星期三 23:39:05 CET

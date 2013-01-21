@@ -1,0 +1,16 @@
+Starting job 958540 ("omp") on c1-2 at 2013年 01月 17日 星期四 12:04:46 CET
+OpenMP Temporal-Blocking version---------------
+T=200000, h=0.1, N=2000000
+Number of threads = 8	y[2000000]=1.261584e-03	timeusage=207.839	GFLOPs=38.4914
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+958540.batch    725216K     52200K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+958540              omp         16                         00:03:29      0:0 
+
+Job 958540 ("omp") completed on c1-2 at 2013年 01月 17日 星期四 12:08:14 CET

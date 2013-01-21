@@ -1,0 +1,16 @@
+Starting job 952540 ("ForwardBack") on c4-33 at 2013年 01月 16日 星期三 22:44:12 CET
+Serial Forward-Back version---------------
+T=100000, h=0.1, N=1000000
+y[1000000]=1.784120e-03      timeusage=457.05      GFLOPs=4.37589
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+952540.batch    265172K     25516K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+952540       ForwardBa+         16                         00:07:40      0:0 
+
+Job 952540 ("ForwardBack") completed on c4-33 at 2013年 01月 16日 星期三 22:51:51 CET

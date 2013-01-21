@@ -1,0 +1,38 @@
+#!/bin/bash
+##
+#Job name: 
+#SBATCH --job-name=omp
+#
+#Project:
+#SBATCH --account=nn2849k
+#
+#Wall clock limit:
+#SBATCH --time=00:100:00
+#
+#Max memory usage per core(MB):
+#SBATCH --mem-per-cpu=1000M
+#SBATCH --nodes=1
+#Number of cores:
+#SBATCH --cpus-per-task=16
+#SBATCH --exclusive
+##Set up job environment
+source /cluster/bin/jobsetup
+##Do some work:
+##cd $SCRATCH
+
+##Number of threads controlled by OpenMP is set by:
+#export OMP_NUM_THREADS=2
+#numactl --physcpubind=0,13  ./app  0.1 200000
+
+#export OMP_NUM_THREADS=4
+#numactl --physcpubind=0,1,12,13  ./app  0.1 200000
+
+#export OMP_NUM_THREADS=8
+#numactl --physcpubind=0,1,2,3,10,11,12,13  ./app  0.1 200000
+
+#export OMP_NUM_THREADS=16
+#./app  0.1 200000
+
+export OMP_NUM_THREADS=16
+numactl --physcpubind=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15  ./app  0.1 200000
+

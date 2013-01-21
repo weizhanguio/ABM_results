@@ -1,0 +1,16 @@
+Starting job 952507 ("tb") on c11-15 at 2013年 01月 16日 星期三 22:42:09 CET
+Serial Temporal-Blocking version---------------
+T=100000, h=0.1, N=1000000
+y[1000000]=1.784120e-03	timeusage=354.92	GFLOPs=5.63508
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+952507.batch    265176K     25516K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+952507               tb         16                         00:05:57      0:0 
+
+Job 952507 ("tb") completed on c11-15 at 2013年 01月 16日 星期三 22:48:05 CET

@@ -1,0 +1,16 @@
+Starting job 952442 ("loopfusion") on c10-33 at 2013年 01月 16日 星期三 22:38:04 CET
+Serial LoopFusion version---------------
+T=200000, h=0.1, N=2000000
+y[2000000]=1.261584e-03    timeusage=2635.05    GFLOPs=3.036
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+952442.batch    265176K     48952K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+952442       loopfusion         16                         00:44:02      0:0 
+
+Job 952442 ("loopfusion") completed on c10-33 at 2013年 01月 16日 星期三 23:22:06 CET

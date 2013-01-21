@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+#  Give the job a name
+#PBS -N "32procs"
+#
+#  Specify the project the job belongs to
+#PBS -A nn2849k
+#
+#  We want 60 hours on 512 cpu's (cores):
+#PBS -l walltime=5:00:00
+#
+#
+#  Send me an email on  a=abort, b=begin, e=end
+#
+#
+#  Use this email address (check that it is correct):
+#
+#
+#  Write the standard output of the job to file 'mpijob.out' (optional)
+#
+#
+#  Write the standard error of the job to file 'mpijob.err' (optional)
+#
+#
+#  Make sure I am in the correct directory
+#PBS -l  mppwidth=32
+cd /work/weizhang/ABM/Optimized-ABM/MPI
+
+#aprun  -B   -cc 0,10   ./app   0.1 200000
+#aprun  -B   -cc 0,9   ./app 0.1 20000
+#aprun  -B   -cc 0,1,2,3,10,11,12,13   ./app   0.1 200000
+#aprun  -B   -cc  0,4,8,12,16,20,24,28   ./app   0.1  200000
+#aprun  -B   -cc  0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30   ./app   0.1  200000
+aprun  -B   -cc  0-31   ./app   0.1  200000
+

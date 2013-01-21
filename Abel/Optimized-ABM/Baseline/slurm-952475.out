@@ -1,0 +1,16 @@
+Starting job 952475 ("baseline") on c11-12 at 2013年 01月 16日 星期三 22:40:37 CET
+Serial Baseline version---------------
+T=100000, h=0.1, N=1000000
+y[1000000]=1.784120e-03    timeusage=666.26    GFLOPs=3.00183
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+952475.batch    265176K     25516K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+952475         baseline         16                         00:11:09      0:0 
+
+Job 952475 ("baseline") completed on c11-12 at 2013年 01月 16日 星期三 22:51:45 CET

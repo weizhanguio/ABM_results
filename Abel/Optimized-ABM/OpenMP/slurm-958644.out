@@ -1,0 +1,16 @@
+Starting job 958644 ("omp") on c6-17 at 2013年 01月 17日 星期四 12:10:18 CET
+OpenMP Temporal-Blocking version---------------
+T=40000, h=0.1, N=400000
+Number of threads = 16	y[400000]=2.820915e-03	timeusage=4.91621	GFLOPs=65.091
+
+Job script resource usage:
+       JobID  MaxVMSize     MaxRSS 
+------------ ---------- ---------- 
+958644.batch    265176K      3864K 
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+958644              omp         16                         00:00:08      0:0 
+
+Job 958644 ("omp") completed on c6-17 at 2013年 01月 17日 星期四 12:10:24 CET
